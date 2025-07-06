@@ -14,12 +14,10 @@ spec:
       labels:
         app: zendrix
     spec:
-      # If the Docker Hub repo is private, create an imagePullSecret
-      # and uncomment the next three lines.
-      # imagePullSecrets:
-      # - name: regcred
+      imagePullSecrets:
+      - name: regcred
       containers:
       - name: zendrix
-        image: mpawar006/zendrix-project1:latest        # tag gets updated by Job 2
+        image: mpawar006/zendrix-project1:latest  # This gets updated by Job 2
         ports:
         - containerPort: 85
