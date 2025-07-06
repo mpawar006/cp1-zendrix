@@ -1,0 +1,6 @@
+# .dockerignore
+.git
+*.zip
+terraform/
+ansible/
+jenkins/
